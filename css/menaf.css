@@ -1,0 +1,412 @@
+/*======================================= General Markup Style ====================================*/
+body{
+	font-family: 'Lucida Sans','Lucida Grande','Lucida Sans Unicode',sans-serif;
+	background: #fff url(../images/mainbg.png) repeat; 
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9);
+	color: #eee;
+}
+p{
+	line-height: 2;
+}
+label{
+	display: block;
+}
+input.text, .textarea{
+	margin: 0em 0em 1em 0em;
+	border: 1px solid #333;
+	background: #333;
+}
+h1{	font-size: 6em; margin-bottom: 5px; letter-spacing: 3px;}
+h2{	font-size: 4em; margin-bottom: 5px;}
+h3{	font-size: 2em; margin-bottom: 5px; letter-spacing: 1px;}
+
+/*========================================= Global Classes ========================================*/
+.content{
+	width: 940px;
+	margin: 0px auto;
+	padding: 5px 0px;
+}
+.contentPart{	
+	padding: 10px 0px;
+	margin: 0px 10px;
+	float: left;	
+}
+ul.nostyle{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	list-style-image: none;
+}
+ul.horizontal{
+	list-style: none;
+	list-style-image: none;
+}
+ul.horizontal li{
+	float: left;
+}
+.box{
+	margin: 1.5em 0em 0em 0em;
+	padding: 1em;
+	border: 1px solid #0c0c0c;
+	position: relative;
+}
+.sBox{
+	padding: 5px;	
+	border: 1px solid #0C0D08;
+	background: #060703;
+	line-height: 0px;
+}
+/*============================================ Header =============================================*/
+#header{
+	width: 100%;
+	height: 150px;
+	padding: 0px 0px 5px 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	border-bottom: 1px solid #0b0b0b;
+	background: url(../images/mainbg.png) repeat;
+	text-align: center;
+	z-index: 1000;
+}
+#header2Line{
+	height: 5px;
+	border-bottom: 1px solid #0b0b0b;
+}
+#langbar{
+	background: #050603;
+	border-bottom: 1px solid #10110d;
+	text-align: center;
+}
+#langlist{
+	text-align: right;
+}
+
+#logo-menu{
+	height: 120px;
+	position: relative;
+}
+#logoDiv{
+	position: absolute;
+	top: -1px;
+	left: 0px;
+}
+
+#logoDiv a{
+	display: block;
+	position: relative;
+}
+#logoDiv a span{
+	width: 350px;
+	height: 110px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+#logoDiv a span#logo1{ 
+	background: url(../images/logo.png) no-repeat 0px 0px;
+	display: block;
+}
+#logo2{ background: url(../images/logo.png) no-repeat 0px -120px; }
+#logo3{ background: url(../images/logo.png) no-repeat 0px -240px; }
+#logo4{ background: url(../images/logo.png) no-repeat 0px -360px; }
+
+#topmenu{
+	width: 450px;
+	height: 35px;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	top: 40px;
+	right: 0px;
+	background: url(../images/stripe.png) no-repeat 445px 0px;
+}
+#topmenu li{
+	padding: 5px;
+	background: url(../images/stripe.png) no-repeat 0px 0px;
+}
+#topmenu li.color1{ background: url(../images/stripe.png) no-repeat 0px 0px;}
+#topmenu li.color2{ background: url(../images/stripe.png) no-repeat 0px -37px; }
+#topmenu li.color3{ background: url(../images/stripe.png) no-repeat 0px -75px; }
+#topmenu li.color4{ background: url(../images/stripe.png) no-repeat 0px -113px;}
+
+#topmenu li a{
+	width: 100px;
+	height: 25px;
+	display: block;
+	float: left;
+	color: #ccc;
+	text-indent: -9999px;
+	text-decoration: none;
+	overflow: hidden;
+}
+#topmenu li a:active{
+	border: 0px !important;
+}
+#topmenu li a#home{ background: url(../images/stripe.png) no-repeat -12px -5px; }
+#topmenu li a#about{ background: url(../images/stripe.png) no-repeat -100px -5px; }
+#topmenu li a#projects{ background: url(../images/stripe.png) no-repeat -204px -5px; }
+#topmenu li a#contact{ background: url(../images/stripe.png) no-repeat -308px -5px; }
+
+/*============================================= Content ===========================================*/
+.page{
+	width: 960px;
+	margin: 0px auto 20px auto;
+	padding: 160px 0px 50px 0px;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+.pageTitle{
+	padding-left: 10px;
+}
+.pageDivider{
+	height: 30px;
+	background: #050603;
+	border-bottom: 1px solid #0b0b0b;
+	border-top: 1px solid #0b0b0b;
+}
+.leftContent{
+	width: 300px;
+}
+.rightContent{
+	width: 620px;
+}
+/*Footer Navigation*/
+.footNav{
+	height: 85px;
+	padding: 0px 100px;
+	margin: 75px 0px;
+	position: relative;
+	background: url(../images/footNavBg.png) no-repeat center top;
+}
+.ball{
+	width: 95px;
+	height: 95px;
+	position: absolute;
+	top: 0px;
+	left: 430px;
+	z-index: 100;
+}
+#page1 .ball{ background: url(../images/footNavBg.png) -50px -93px;}
+#page2 .ball{ background: url(../images/footNavBg.png) -150px -93px;}
+#page3 .ball{ background: url(../images/footNavBg.png) -250px -93px;}
+#page4 .ball{ background: url(../images/footNavBg.png) -350px -93px;}
+
+.footNav a{
+	display: block;
+	font-size: 16px;
+	text-decoration: none;
+	color: #999;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9);
+	font-family: Cambria, Georgia, Times, Times New Roman, serif;
+	line-height: 1.3;
+}
+.footNav a span.actionWords{
+	font-size: 24px;
+}
+.footNavSec{
+	width: 310px;
+	padding: 15px 0px;
+}
+.footNavLeft{
+	float: left;
+	text-align: right;
+}
+.footNavRight{
+	float: right;
+}
+/*Page 1 Style*/
+#page1 h1, #page1 h2{
+	color : #7f0723;
+}
+#page1 h3{
+	color: #999;
+}
+#page2 h1, #page2 h2, #page2 h3{
+	color : #176897;
+}
+#page2 h3{
+	/*color: #FCF0BC;*/
+}
+#page3 h1, #page3 h2{
+	color: #ff9900;
+}
+ #page3 h3{
+ 	color: #999;
+ }
+#page4 h1, #page4 h2, #page4 h3{
+	color: #669933;
+}
+
+/*About page style*/
+ul.aboutList{
+	margin-bottom: 1em;
+}
+ul.aboutList li{
+	padding: 5px 0px;
+	margin-left: 10px;
+	border-bottom: 1px dashed #0b0b0b;	
+}
+
+/*Projects page style*/
+#page3 .leftContent{
+	padding-top: 100px;
+}
+#projectsNav li{
+	margin: 5px 15px 5px 0px;
+	padding: 5px 0px;
+}
+#projectsNav li:hover{
+	background: #060703;
+}
+#projectsNav li a{
+	margin: 0px;
+	display: block;
+	padding-left: 35px;
+	font-size: 2em;
+	text-decoration: none;
+	color: #FF9900;
+	background: url(../images/stripe.png) no-repeat -440px -25px;
+}
+#projectsNav li a.selected{
+	background: url(../images/stripe.png) no-repeat -440px 5px;
+}
+.projectThumbs li{
+	float: left;
+	position: relative;
+	margin: 10px 10px 10px 0px;
+	padding: 5px;
+	border: 1px solid #0C0D08;
+	background: #060703;
+}
+.projectThumbs li:hover, .projectThumbs li.hover{
+	border: 1px solid #FF9900;
+	background: #f90;
+}
+.projectThumbs li a{
+	display: block;
+	line-height: 0px;
+}
+.projectThumbs li.selected{
+	background: #f90;
+}
+
+/*Contact Page*/
+.contactBoxLink{
+	display: block;
+	width: 275px;
+	height: 110px;
+	margin: 10px;
+	float: left;
+	background: #050602 url(../images/contact.png) no-repeat 0px 0px;
+	text-decoration: none;
+	color: #aaa;
+	font-family: Cambria, Georgia, Times, Times New Roman, serif;
+	border: 1px solid #0c0d08;
+}
+.contactBoxLink:hover{
+	color: #fff;
+	background-color: #3b5c19;
+	border: 1px solid #49701f;
+}
+
+#email{ background-position: 10px 0px; }
+#blog{ background-position: 10px -120px; }
+#facebook{ background-position: 10px -240px; }
+#twitter{ background-position: 10px -360px; }
+#msn{ background-position: 10px -480px; }
+#skype{ background-position: 10px -600px; }
+
+.contactBoxLink span{
+	display: block;
+	padding-left: 85px;
+}
+.contactBoxLink .bigText{
+	margin: 20px 0px 5px 0px;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+.contactBoxLink .smallText{
+	font-size: 13px;
+	color: #ddd;
+}
+/*============================================= Footer ============================================*/
+#footer{
+	margin: 0px;
+	padding: 0px;
+	background: #050603;
+	border-top: 1px solid #10110d;
+}
+#footerContent{
+	width: 960px;
+	margin: 0px auto;
+	padding: 5px 0px;
+}
+
+/*============================================ Modal Box ==========================================*/
+#overlay{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: url(../images/overlay.png) repeat;
+	display: none;
+	z-index: 1500;
+}
+#modal{
+	width: 0px;
+	position: fixed;
+	z-index: 2000;
+	top: 50%;
+	left: 0px;	
+	display: none;
+	/*border-top: 3px solid #f90;*/
+	/*border-bottom: 3px solid #f90;*/
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+	color: #333;
+}
+.modalBorder{
+	height: 25px;
+	width: 100%;
+}
+.modalBorderTop{
+	background: url(../images/modal-stripe.png) repeat 0px -55px;
+}
+.modalBorderBottom{
+	background: url(../images/modal-stripe.png) repeat 0px -80px;
+}
+.modalArea{
+	background: #fff url(../images/modalBg.png) repeat;
+}
+#modalContent{
+	width: 960px;
+	padding: 20px 0px;
+	margin: 0px auto;
+	position: relative;
+	min-height: 50px;
+}
+#modalContentArea{
+	display: none;
+}
+#closeBt{
+	width: 100px;
+	height: 40px;
+	background: #000;
+	position: absolute;
+	top: -15px;
+	right: 450px;
+	display: none;
+	background: url(../images/modal-stripe.png) no-repeat 0px 0px;
+	cursor: pointer;	
+}
+#progressBar{
+	position: absolute;
+	top: 30%;
+	left: 45%;
+	padding-left: 45px;
+	padding-top: 5px;
+	background: url(../images/loader.gif) no-repeat left top;
+}
